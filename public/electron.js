@@ -2,19 +2,18 @@
 const { app, BrowserWindow } = require('electron')
 const path = require('path')
 
-function createWindow() {
+function createWindow () {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 1200,
+    height: 800,
     webPreferences: {
-    //   preload: path.join(__dirname, 'preload.js'),
+      //   preload: path.join(__dirname, 'preload.js'),
       nodeIntegration: true, // 可使用 node变量
       contextIsolation: false
     }
   })
 
-  console.log(process.env.NODE_ENV)
   if (process.env.NODE_ENV === 'development') {
     mainWindow.loadURL('http://localhost:3000/')
   } else {

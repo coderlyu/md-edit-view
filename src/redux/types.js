@@ -1,0 +1,2 @@
+export const CHANGE_PLATFORM = 'CHANGE_PLATFORM'
+export const GET_PLATFORM = 'GET_PLATFORM'
