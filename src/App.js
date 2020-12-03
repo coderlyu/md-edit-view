@@ -1,4 +1,4 @@
-import Layout from './layout/index.jsx'
+import Layout from './layout/index'
 function App () {
   return (
     <div className="App">
