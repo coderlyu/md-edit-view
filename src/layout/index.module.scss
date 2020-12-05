@@ -1,0 +1,18 @@
+.hidden {
+  visibility: hidden;
+}
+.title-dot-wrapper {
+  position: relative;
+  padding-left: 10px;
+  .title-dot {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    background: #ada1a1;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

@@ -1,0 +1,84 @@
+.content-wrapper {
+  width: 100vw;
+  height: calc(100vh - 72px);
+  background: #ffffff;
+  position: relative;
+  .content-save {
+    position: absolute;
+    right: 5%;
+  }
+  /deep/ :global(.w-e-text-container) {
+    border-bottom: none !important;
+    border-left: none !important;
+    border-top: none !important;
+    height: 100% !important;
+  }
+  /deep/ :global(.w-e-toolbar) {
+    border-left: none !important;
+  }
+}
+.editorClass {
+  margin-top: 16px;
+  width: 50%;
+  float: left;
+}
+.content-right {
+  width: 50%;
+  float: right;
+  padding: 16px;
+  margin-top: 16px;
+  .right-title {
+    font-weight: 600;
+    text-align: center;
+  }
+  :global(table) {
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    margin: 10px 0;
+    line-height: 1.5;
+    tbody {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      tr {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        th {
+          border-right: 1px solid #ccc;
+          padding: 3px 5px;
+          min-height: 30px;
+          border-bottom: 2px solid #ccc;
+          text-align: center;
+          background-color: #f1f1f1;
+          box-sizing: border-box;
+        }
+        td {
+          box-sizing: border-box;
+          border-bottom: 1px solid #ccc;
+          border-right: 1px solid #ccc;
+          padding: 3px 5px;
+          min-height: 30px;
+          line-height: 150%;
+        }
+      }
+    }
+  }
+  :global(pre) {
+    margin: 10px 0;
+    line-height: 1.5;
+    box-sizing: border-box;
+    code {
+      display: block;
+      background-color: #f1f1f1;
+      border-radius: 3px;
+      padding: 3px 5px;
+      margin: 0 3px;
+      xmp {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+    }
+  }
+}
